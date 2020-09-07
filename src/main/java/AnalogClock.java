@@ -45,7 +45,7 @@ class AnalogClock {
 
           min = degrees * 6;
 
-         System.out.println(min);
+         System.out.print(min);
 
         // closing the scanner object
         scanner.close();
