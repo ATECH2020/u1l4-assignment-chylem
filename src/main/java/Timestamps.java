@@ -31,7 +31,7 @@ class Timestamps {
         secDeltaH = deltaH * 3600;
         secDeltaM = deltaM * 60;
         totalSec = secDeltaH + secDeltaM + deltaS;
-        System.out.println(totalSec);
+        System.out.print(totalSec);
        
 
 
