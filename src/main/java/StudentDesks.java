@@ -29,7 +29,7 @@ class StudentDesks {
        desksBM = studentsB % 2;
        desksCM = studentsC % 2;
        totalDesks = desksA + desksB + desksC + desksAM + desksBM + desksCM;
-       System.out.println(totalDesks);
+       System.out.print(totalDesks);
 
         // closing the scanner object
         scanner.close();
