@@ -7,46 +7,17 @@ class AnalogClock {
         Scanner scanner = new Scanner(System.in);
 
         //Reads ints from user
-        int userDegrees = scanner.nextInt();
+        int hours = scanner.nextInt(); 
+
 
         /*
          *  your code goes here
          */
-        int degrees;
-        int minDegrees;
-        int min;
+         int degrees; 
 
-          degrees = userDegrees - 180;
-          
-          if (degrees <=0)
-          {
-            degrees = 0;
-          }
-          else if (degrees <= 5)
-          {
-            degrees = 10;
-          }
-          else if (degrees <= 10)
-          {
-            degrees = 20;
-          }
-          else if (degrees <= 15)
-          {
-            degrees = 30;
-          }
-          else if (degrees <= 20)
-          {
-            degrees = 40;
-          }
-          else if (degrees <= 30)
-          {
-            degrees = 50;
-          }
+          degrees = (hours % 30) * 12;
 
-          min = degrees * 6;
-
-         System.out.print(min);
-
+          System.out.print(degrees);
         // closing the scanner object
         scanner.close();
     }
