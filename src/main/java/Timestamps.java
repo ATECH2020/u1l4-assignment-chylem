@@ -18,6 +18,21 @@ class Timestamps {
         /*
          *  your code goes here
          */
+        int deltaH;
+        int deltaM;
+        int deltaS;
+        int secDeltaH;
+        int secDeltaM;
+        int totalSec;
+ 
+        deltaH = hours2 - hours1;
+        deltaM = minutes2 - minutes1;
+        deltaS = seconds2 - seconds1;
+        secDeltaH = deltaH * 3600;
+        secDeltaM = deltaM * 60;
+        totalSec = secDeltaH + secDeltaM + deltaS;
+        System.out.print(totalSec);
+       
 
 
         // closing the scanner object
